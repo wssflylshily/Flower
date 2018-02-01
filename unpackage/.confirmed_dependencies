@@ -1,0 +1,18 @@
+{
+	"index.html": {
+		"refer": [
+			"home.html",
+			"reg.html"
+		]
+	},
+	"reg.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"home.html": {
+		"refer": [
+			"prolist.html"
+		]
+	}
+}

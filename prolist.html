@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/juicer-min.js" ></script>
+		<script type="text/javascript" src="js/data/prolist.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav search-header">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <div class="search-list">
+			    <input type="search" class="mui-input-clear" placeholder="搜索关键字查询">
+			</div>
+		</header>
+		<script id="tpl" type="text/template" class="table" style="margin-top: 13%;">
+			<ul class="mui-table-view mui-grid-view">
+				{@each product as it}
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+			        <a href="#">
+			            <img class="mui-media-object" src="${it.map}">
+			            <div class="mui-media-body">${it.p_name}</div>
+			        </a>
+			    </li>
+				{@/each}
+			</ul>
+		</script>
+	</body>
+
+</html>
